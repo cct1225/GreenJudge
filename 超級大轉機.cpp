@@ -37,7 +37,7 @@ int main()
         {
             if(V[i]==0&&D[i]<D[k])
             {
-                k=i;
+                k=i;//以k為基準點探索
             }    
         }
         if(k==0)    break;
@@ -46,7 +46,7 @@ int main()
         {
             if(D[k]+M[i][k]+T[i]<D[i])
             {
-                D[i]=D[k]+M[i][k]+T[i];
+                D[i]=D[k]+M[i][k]+T[i];//加上轉機費
             }
         }
     }
