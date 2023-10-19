@@ -37,7 +37,7 @@ int main()
         {
             if(V[i]==0&&D[i]<D[k])
             {
-                k=i;//以k為基準點探索
+                k=i;//以k為基準點進行探索
             }    
         }
         if(k==0)    break;
